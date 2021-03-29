@@ -1,0 +1,17 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="OnlineExamSSM:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/OnlineExamSSM_war_exploded</output-path>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="OnlineExamSSM" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="lib" />
+          <element id="library" level="project" name="Spring-5.2.3.RELEASE" />
+        </element>
+      </element>
+      <element id="javaee-facet-resources" facet="OnlineExamSSM/web/Web" />
+    </root>
+  </artifact>
+</component>

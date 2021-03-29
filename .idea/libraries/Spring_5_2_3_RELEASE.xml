@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Spring-5.2.3.RELEASE" type="spring">
+    <properties version="5.2.3.RELEASE" />
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/aopalliance-1.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/commons-logging-1.2.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
