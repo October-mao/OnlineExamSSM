@@ -56,9 +56,7 @@ $(function() {
 			iframe : true,
 			url : 'reception/login.jsp',
 			width : '30%',
-			height : '50%',
-			top : '100px',
-			left : '430px',
+			height : '40%',
 			esc : true,
 			overlay : true,
 			onClosed : function() {
@@ -109,10 +107,8 @@ $(function() {
 			title : '注册',
 			iframe : true,
 			url : 'preStudentReg',
-			width : '28%',
-			height : '45%',
-			top : '100px',
-			left : '430px',
+			width : '30%',
+			height : '55%',
 			esc : true,
 			overlay : true,
 			onClosed : function() {

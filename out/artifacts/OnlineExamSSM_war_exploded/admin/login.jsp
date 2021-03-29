@@ -6,7 +6,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>【猿来入此在线考试系统】后台登录</title>
+<title>【线上单元考试系统】后台登录</title>
 <%
 	String path = request.getContextPath();
 	String basePath = request.getScheme() + "://"

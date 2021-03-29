@@ -15,16 +15,16 @@
  	<link href="${path }/css/bootstrap/bootstrap.min.css" rel="stylesheet" />
 </head>
 <body style="background-color: #EEEEEE;">
-	<div class="jumbotron" style="height: 630px;padding-top: 100px; padding-bottom: 0px; margin-bottom: 0px;">
+	<div class="jumbotron" style="height: 500px;padding-top: 100px; padding-bottom: 0px; margin-bottom: 0px;">
 		<div style="padding: 20px;">
 <%--		<img src="${path }/images/reception/home-bg.png" width="100%"/>--%>
 
 	<div id="page-wrapper">
-		<div class="box">
+		<div class="box" >
 			<br><br><br>
-			<div class="function"><p>[通知]考试系统已开放</p></div>
+			<div class="function" align="center"><p>[通知]考试系统已开放</p></div>
 			<div class="form">
-				<table class="news">
+				<table class="news" align="center">
 					<tr><td><b>关于本学期校级考试相关事宜安排的通知</b></td></tr>
 					<tr><td>各学院及相关单位:</td></tr>
 					<tr><td>根据学校教学安排，下星期全校考试定于1月8日-1月22日 考试周，考试工作将从1月8日开始。现将有关事项通知如下：</td></tr>
@@ -38,8 +38,8 @@
 			</div>
 		</div>
 	</div>
-			<p style="margin-top:20px;">
-				<a class="btn btn-primary btn-large" href="https://www.icourse163.org/" target="_blank">学习更多</a>
+			<p style="margin-top:20px;" align="center">
+				<a class="btn btn-primary btn-large" href="https://www.icourse163.org/" target="_blank" >学习更多</a>
 			</p>
 		</div>
 	</div>
