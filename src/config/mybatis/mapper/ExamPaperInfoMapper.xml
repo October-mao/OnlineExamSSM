@@ -3,9 +3,9 @@
 PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
-<mapper namespace="com.taohan.online.exam.dao.ExamPaperInfoMapper">
+<mapper namespace="com.haowei.online.exam.dao.ExamPaperInfoMapper">
 	
-	<resultMap type="com.taohan.online.exam.po.ExamPaperInfo" id="queryExamPaper">
+	<resultMap type="com.haowei.online.exam.po.ExamPaperInfo" id="queryExamPaper">
 		<id column="examPaperId" property="examPaperId"/>
 		<result column="examPaperName" property="examPaperName"/>
 		<result column="subjectNum" property="subjectNum"/>
@@ -14,7 +14,7 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 		<result column="division" property="division"/>
 		<result column="examPaperEasy" property="examPaperEasy"/>
 		<!-- 对应年级 -->
-		<association property="grade" javaType="com.taohan.online.exam.po.GradeInfo">
+		<association property="grade" javaType="com.haowei.online.exam.po.GradeInfo">
 			<id column="gradeId" property="gradeId"/>
 			<result column="gradeName" property="gradeName"/>
 		</association>
@@ -55,12 +55,12 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 	</select>
 	
 	<!-- 添加试卷 -->
-	<insert id="isAddExamPaper" parameterType="com.taohan.online.exam.po.ExamPaperInfo" useGeneratedKeys="true" keyProperty="examPaperId">
+	<insert id="isAddExamPaper" parameterType="com.haowei.online.exam.po.ExamPaperInfo" useGeneratedKeys="true" keyProperty="examPaperId">
 		INSERT INTO ExamPaperInfo VALUES(NULL, #{examPaperName}, #{subjectNum}, #{examPaperTime}, #{examPaperScore}, #{grade.gradeId}, #{division}, #{examPaperEasy})
 	</insert>
 	
 	<!-- 修改试卷信息 -->
-	<update id="isUpdateExamPaper" parameterType="com.taohan.online.exam.po.ExamPaperInfo">
+	<update id="isUpdateExamPaper" parameterType="com.haowei.online.exam.po.ExamPaperInfo">
 		UPDATE ExamPaperInfo SET
 		examPaperName=#{examPaperName}, subjectNum=#{subjectNum}, examPaperTime=#{examPaperTime},
 		examPaperScore=#{examPaperScore}, division=#{division}, examPaperEasy=#{examPaperEasy}, gradeId=#{grade.gradeId}

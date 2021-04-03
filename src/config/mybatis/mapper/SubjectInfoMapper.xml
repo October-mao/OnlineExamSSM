@@ -3,9 +3,9 @@
 PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
-<mapper namespace="com.taohan.online.exam.dao.SubjectInfoMapper">
+<mapper namespace="com.haowei.online.exam.dao.SubjectInfoMapper">
 	
-	<resultMap type="com.taohan.online.exam.po.SubjectInfo" id="querySubjects">
+	<resultMap type="com.haowei.online.exam.po.SubjectInfo" id="querySubjects">
 		<id column="subjectId" property="subjectId"/>
 		<result column="subjectName" property="subjectName"/>
 		<result column="optionA" property="optionA"/>
@@ -18,12 +18,12 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 		<result column="subjectEasy" property="subjectEasy"/>
 		<result column="division" property="division"/>
 		<!-- 科目 -->
-		<association property="course" javaType="com.taohan.online.exam.po.CourseInfo">
+		<association property="course" javaType="com.haowei.online.exam.po.CourseInfo">
 			<id column="courseId" property="courseId"/>
 			<result column="courseName" property="courseName"/>
 		</association>
 		<!-- 年级 -->
-		<association property="grade" javaType="com.taohan.online.exam.po.GradeInfo">
+		<association property="grade" javaType="com.haowei.online.exam.po.GradeInfo">
 			<id column="gradeId" property="gradeId"/>
 			<result column="gradeName" property="gradeName"/>
 		</association>
@@ -75,13 +75,13 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 	</select>
 	
 	<!-- 添加试题 -->
-	<insert id="isAddSubject" parameterType="com.taohan.online.exam.po.SubjectInfo" useGeneratedKeys="true" keyProperty="subjectId">
+	<insert id="isAddSubject" parameterType="com.haowei.online.exam.po.SubjectInfo" useGeneratedKeys="true" keyProperty="subjectId">
 		INSERT INTO SubjectInfo VALUES
 		(NULL, #{subjectName}, #{optionA}, #{optionB}, #{optionC}, #{optionD}, #{rightResult}, #{subjectScore}, #{subjectType}, #{course.courseId}, #{grade.gradeId}, #{subjectEasy}, #{division})
 	</insert>
 	
 	<!-- 修改试题 -->
-	<update id="isUpdateSubject" parameterType="com.taohan.online.exam.po.SubjectInfo">
+	<update id="isUpdateSubject" parameterType="com.haowei.online.exam.po.SubjectInfo">
 		UPDATE SubjectInfo SET 
 		subjectName=#{subjectName}, optionA=#{optionA}, optionB=#{optionB}, optionC=#{optionC}, optionD=#{optionD}, rightResult=#{rightResult}, subjectScore=#{subjectScore}, subjectType=#{subjectType}, courseId=#{course.courseId}, gradeId=#{grade.gradeId}, subjectEasy=#{subjectEasy}, division=#{division}
 		WHERE subjectId=#{subjectId}

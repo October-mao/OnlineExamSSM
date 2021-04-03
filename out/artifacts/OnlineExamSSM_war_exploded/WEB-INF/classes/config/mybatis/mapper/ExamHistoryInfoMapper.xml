@@ -4,12 +4,12 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
 
-<mapper namespace="com.taohan.online.exam.dao.ExamHistoryPaperMapper">
+<mapper namespace="com.haowei.online.exam.dao.ExamHistoryPaperMapper">
 	
-	<resultMap type="com.taohan.online.exam.po.ExamHistoryInfo" id="queryExamHistoryToStudentResultMap">
+	<resultMap type="com.haowei.online.exam.po.ExamHistoryInfo" id="queryExamHistoryToStudentResultMap">
 		<id column="historyId" property="historyId"/>
 		<result column="examScore" property="examScore"/>
-		<association property="examPaper" javaType="com.taohan.online.exam.po.ExamPaperInfo">
+		<association property="examPaper" javaType="com.haowei.online.exam.po.ExamPaperInfo">
 			<id column="examPaperId" property="examPaperId"/>
 			<result column="examPaperName" property="examPaperName"/>
 			<result column="examPaperScore" property="examPaperScore"/>
@@ -39,16 +39,16 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 	
 	
 	
-	<resultMap type="com.taohan.online.exam.po.ExamHistoryInfo" id="queryExamHistoryToTeacherResultMap">
+	<resultMap type="com.haowei.online.exam.po.ExamHistoryInfo" id="queryExamHistoryToTeacherResultMap">
 		<id column="historyId" property="historyId"/>
 		<result column="examScore" property="examScore"/>
-		<association property="examPaper" javaType="com.taohan.online.exam.po.ExamPaperInfo">
+		<association property="examPaper" javaType="com.haowei.online.exam.po.ExamPaperInfo">
 			<id column="examPaperId" property="examPaperId"/>
 			<result column="examPaperName" property="examPaperName"/>
 			<result column="examPaperScore" property="examPaperScore"/>
 			<result column="subjectNum" property="subjectNum"/>
 		</association>
-		<association property="student" javaType="com.taohan.online.exam.po.StudentInfo">
+		<association property="student" javaType="com.haowei.online.exam.po.StudentInfo">
 			<id column="studentId" property="studentId"/>
 			<result column="studentName" property="studentName"/>
 		</association>

@@ -4,20 +4,20 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
 
-<mapper namespace="com.taohan.online.exam.dao.ExamPlanInfoMapper">
+<mapper namespace="com.haowei.online.exam.dao.ExamPlanInfoMapper">
 	
-	<resultMap type="com.taohan.online.exam.po.ExamPlanInfo" id="queryExamPlanResultMap">
+	<resultMap type="com.haowei.online.exam.po.ExamPlanInfo" id="queryExamPlanResultMap">
 		<id column="examPlanId" property="examPlanId"/>
 		<result column="beginTime" property="beginTime"/>
-		<association property="course" javaType="com.taohan.online.exam.po.CourseInfo">
+		<association property="course" javaType="com.haowei.online.exam.po.CourseInfo">
 			<id column="courseId" property="courseId"/>
 			<result column="courseName" property="courseName"/>
 		</association>
-		<association property="clazz" javaType="com.taohan.online.exam.po.ClassInfo">
+		<association property="clazz" javaType="com.haowei.online.exam.po.ClassInfo">
 			<id column="classId" property="classId"/>
 			<result column="className" property="className"/>
 		</association>
-		<association property="examPaper" javaType="com.taohan.online.exam.po.ExamPaperInfo">
+		<association property="examPaper" javaType="com.haowei.online.exam.po.ExamPaperInfo">
 			<id column="examPaperId" property="examPaperId"/>
 			<result column="examPaperName" property="examPaperName"/>
 			<result column="subjectNum" property="subjectNum"/>
@@ -43,11 +43,11 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 		</where>
 	</select>
 	
-	<insert id="isAddExamPlan" parameterType="com.taohan.online.exam.po.ExamPlanInfo">
+	<insert id="isAddExamPlan" parameterType="com.haowei.online.exam.po.ExamPlanInfo">
 		INSERT INTO ExamPlanInfo VALUES(NULL, #{course.courseId}, #{clazz.classId}, #{examPaper.examPaperId}, #{beginTime})
 	</insert>
 	
-	<update id="isUpdateExamPlan" parameterType="com.taohan.online.exam.po.ExamPlanInfo">
+	<update id="isUpdateExamPlan" parameterType="com.haowei.online.exam.po.ExamPlanInfo">
 		UPDATE ExamPlanInfo SET courseId=#{course.courseId}, classId=#{clazz.classId}, examPaperId=#{examPaper.examPaperId}, beginTime=#{beginTime}
 		WHERE examPlanId=#{examPlanId}
 	</update>
@@ -62,20 +62,20 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 	</select>
 	
 	
-	<resultMap type="com.taohan.online.exam.po.ExamPlanInfo" id="queryWillExam">
+	<resultMap type="com.haowei.online.exam.po.ExamPlanInfo" id="queryWillExam">
 		<id column="examPlanId" property="examPlanId"/>
 		<result column="beginTime" property="beginTime"/>
 		<!-- 科目 -->
-		<association property="course" javaType="com.taohan.online.exam.po.CourseInfo">
+		<association property="course" javaType="com.haowei.online.exam.po.CourseInfo">
 			<id column="courseId" property="courseId"/>
 			<result column="courseName" property="courseName"/>
 		</association>
 		<!-- 班级 -->
-		<association property="clazz" javaType="com.taohan.online.exam.po.ClassInfo">
+		<association property="clazz" javaType="com.haowei.online.exam.po.ClassInfo">
 			<id column="classId" property="classId"/>
 		</association>
 		<!-- 试卷 -->
-		<association property="examPaper" javaType="com.taohan.online.exam.po.ExamPaperInfo">
+		<association property="examPaper" javaType="com.haowei.online.exam.po.ExamPaperInfo">
 			<id column="examPaperId" property="examPaperId"/>
 			<result column="examPaperName" property="examPaperName"/>
 			<result column="subjectNum" property="subjectNum"/>

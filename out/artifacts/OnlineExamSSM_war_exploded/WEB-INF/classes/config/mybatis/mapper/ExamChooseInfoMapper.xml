@@ -4,18 +4,18 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
 
-<mapper namespace="com.taohan.online.exam.dao.ExamChooseInfoMapper">
+<mapper namespace="com.haowei.online.exam.dao.ExamChooseInfoMapper">
 	
 	<!-- 根据学生编号、试卷编号、试题编号查询选择记录
 		针对于具体某一题
 	 -->
-	<select id="getChooseWithIds" parameterType="java.util.Map" resultType="com.taohan.online.exam.po.ExamChooseInfo">
+	<select id="getChooseWithIds" parameterType="java.util.Map" resultType="com.haowei.online.exam.po.ExamChooseInfo">
 		SELECT * FROM ExamChooseInfo
 		WHERE studentId=#{studentId} AND examPaperId=#{examPaperId} AND subjectId=#{subjectId}
 	</select>
 
 	<!-- 根据学生编号、试卷编号、试题编号修改选择记录 -->
-	<update id="updateChooseWithIds" parameterType="com.taohan.online.exam.po.ExamChooseInfo">
+	<update id="updateChooseWithIds" parameterType="com.haowei.online.exam.po.ExamChooseInfo">
 		UPDATE ExamChooseInfo SET chooseResult=#{chooseResult}
 		WHERE chooseId=#{chooseId}
 	</update>
@@ -27,10 +27,10 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 	</insert>
 	
 	
-	<resultMap type="com.taohan.online.exam.po.ExamChooseInfo" id="queryChooseInfosResultMap">
+	<resultMap type="com.haowei.online.exam.po.ExamChooseInfo" id="queryChooseInfosResultMap">
 		<id column="chooseId" property="chooseId"/>
 		<result column="chooseResult" property="chooseResult"/>
-		<association property="subject" javaType="com.taohan.online.exam.po.SubjectInfo">
+		<association property="subject" javaType="com.haowei.online.exam.po.SubjectInfo">
 			<id column="subjectId" property="subjectId"/>
 			<result column="rightResult" property="rightResult"/>
 			<result column="subjectScore" property="subjectScore"/>
@@ -53,10 +53,10 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 	 </select>
 	 
 	 
-	 <resultMap type="com.taohan.online.exam.po.ExamChooseInfo" id="queryChooseInfoWithExamSubjectResultMap">
+	 <resultMap type="com.haowei.online.exam.po.ExamChooseInfo" id="queryChooseInfoWithExamSubjectResultMap">
 		<id column="chooseId" property="chooseId"/>
 		<result column="chooseResult" property="chooseResult"/>
-		<association property="subject" javaType="com.taohan.online.exam.po.SubjectInfo">
+		<association property="subject" javaType="com.haowei.online.exam.po.SubjectInfo">
 			<id column="subjectId" property="subjectId"/>
 			<result column="subjectName" property="subjectName"/>
 			<result column="optionA" property="optionA"/>
@@ -67,12 +67,12 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 			<result column="subjectScore" property="subjectScore"/>
 			<result column="subjectEasy" property="subjectEasy"/>
 		</association>
-		<association property="examPaper" javaType="com.taohan.online.exam.po.ExamPaperInfo">
+		<association property="examPaper" javaType="com.haowei.online.exam.po.ExamPaperInfo">
 			<id column="examPaperId" property="examPaperId"/>
 			<result column="examPaperName" property="examPaperName"/>
 			<result column="examPaperScore" property="examPaperScore"/>
 		</association>
-		<association property="student" javaType="com.taohan.online.exam.po.StudentInfo">
+		<association property="student" javaType="com.haowei.online.exam.po.StudentInfo">
 			<id column="studentId" property="studentId"/>
 		</association>
 	</resultMap>

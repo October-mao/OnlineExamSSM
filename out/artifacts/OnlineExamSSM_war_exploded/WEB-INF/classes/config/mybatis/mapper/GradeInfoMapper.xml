@@ -3,21 +3,21 @@
 PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
-<mapper namespace="com.taohan.online.exam.dao.GradeInfoMapper">
+<mapper namespace="com.haowei.online.exam.dao.GradeInfoMapper">
 	
 	<!-- 查询所有年级 -->
-	<select id="getGrades" resultType="com.taohan.online.exam.po.GradeInfo">
+	<select id="getGrades" resultType="com.haowei.online.exam.po.GradeInfo">
 		SELECT * FROM GradeInfo
 	</select>
 	
 	<!-- 根据编号获取年级 -->
-	<select id="getGradeById" parameterType="int" resultType="com.taohan.online.exam.po.GradeInfo">
+	<select id="getGradeById" parameterType="int" resultType="com.haowei.online.exam.po.GradeInfo">
 		SELECT * FROM GradeInfo WHERE gradeId=#{gradeId}
 	</select>
 	
 	
 	<!-- 添加年级 -->
-	<insert id="isAddGrade" parameterType="com.taohan.online.exam.po.GradeInfo">
+	<insert id="isAddGrade" parameterType="com.haowei.online.exam.po.GradeInfo">
 		INSERT INTO GradeInfo VALUES(NULL, #{gradeName})
 	</insert>
 	
@@ -27,7 +27,7 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 	</delete>
 	
 	<!-- 修改年级信息 -->
-	<update id="isUpdateGrade" parameterType="com.taohan.online.exam.po.GradeInfo">
+	<update id="isUpdateGrade" parameterType="com.haowei.online.exam.po.GradeInfo">
 		UPDATE GradeInfo SET gradeName=#{gradeName} WHERE gradeId=#{gradeId}
 	</update>
 	

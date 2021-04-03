@@ -4,9 +4,9 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
 
-<mapper namespace="com.taohan.online.exam.dao.StudentExamInfoMapper">
+<mapper namespace="com.haowei.online.exam.dao.StudentExamInfoMapper">
 
-	<resultMap type="com.taohan.online.exam.po.StudentExamInfo" id="baseQueryResultMap">
+	<resultMap type="com.haowei.online.exam.po.StudentExamInfo" id="baseQueryResultMap">
 		<result column="studentId" property="studentId" />
 		<result column="studentName" property="studentName" />
 		<result column="examSum" property="examSum" />

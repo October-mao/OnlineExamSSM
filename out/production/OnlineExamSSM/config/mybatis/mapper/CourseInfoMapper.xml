@@ -3,20 +3,20 @@
 PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
-<mapper namespace="com.taohan.online.exam.dao.CourseInfoMapper">
+<mapper namespace="com.haowei.online.exam.dao.CourseInfoMapper">
 	
-	<resultMap type="com.taohan.online.exam.po.CourseInfo" id="queryCourses">
+	<resultMap type="com.haowei.online.exam.po.CourseInfo" id="queryCourses">
 		<id column="courseId" property="courseId"/>
 		<result column="courseName" property="courseName"/>
 		<result column="division" property="division"/>
-		<association property="grade" javaType="com.taohan.online.exam.po.GradeInfo">
+		<association property="grade" javaType="com.haowei.online.exam.po.GradeInfo">
 			<id column="gradeId" property="gradeId"/>
 			<result column="gradeName" property="gradeName"/>
 		</association>
 	</resultMap>
 	
 	<!-- 查询所有学科 -->
-	<select id="getCourses" parameterType="com.taohan.online.exam.po.CourseInfo" resultMap="queryCourses">
+	<select id="getCourses" parameterType="com.haowei.online.exam.po.CourseInfo" resultMap="queryCourses">
 		SELECT * FROM CourseInfo a
 		INNER JOIN GradeInfo b ON a.gradeId=b.gradeId
 		<where>
@@ -33,12 +33,12 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 	</select>
 	
 	<!-- 修改学科 -->
-	<update id="isUpdateCourse" parameterType="com.taohan.online.exam.po.CourseInfo">
+	<update id="isUpdateCourse" parameterType="com.haowei.online.exam.po.CourseInfo">
 		UPDATE CourseInfo SET courseName=#{courseName}, division=#{division}, gradeId=#{grade.gradeId} WHERE courseId=#{courseId}
 	</update>
 	
 	<!-- 添加学科 -->
-	<insert id="isAddCourse" parameterType="com.taohan.online.exam.po.CourseInfo">
+	<insert id="isAddCourse" parameterType="com.haowei.online.exam.po.CourseInfo">
 		INSERT INTO CourseInfo VALUES(NULL, #{courseName}, #{division}, #{grade.gradeId})
 	</insert>
 	

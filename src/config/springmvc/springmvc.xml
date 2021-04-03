@@ -10,7 +10,7 @@
 	 	http://www.springframework.org/schema/task http://www.springframework.org/schema/task/spring-task-3.2.xsd">
 
 	<!-- 只需要扫描包中的 Controller 注解 -->
-	<context:component-scan base-package="com.taohan.online.exam.handler">
+	<context:component-scan base-package="com.haowei.online.exam.handler">
 	<context:include-filter type="annotation"
 		expression="org.springframework.stereotype.Controller" />
 	</context:component-scan>
@@ -48,12 +48,12 @@
 	
 	<!-- 后台访问拦截器 -->
 	<!-- <mvc:interceptors>
-		<bean class="com.taohan.online.exam.interceptor.LoginInterceptor"></bean>
+		<bean class="com.haowei.online.exam.interceptor.LoginInterceptor"></bean>
 		<mvc:interceptor>
 			<mvc:mapping path="/admin/**"/>
 			<mvc:mapping path="/grade/**"/>
 			<mvc:exclude-mapping path="/admin/login.jsp"/>
-			<bean class="com.taohan.online.exam.interceptor.LoginInterceptor"></bean>
+			<bean class="com.haowei.online.exam.interceptor.LoginInterceptor"></bean>
 		</mvc:interceptor>
 	</mvc:interceptors> -->
 </beans>

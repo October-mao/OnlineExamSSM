@@ -3,18 +3,18 @@
 PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
-<mapper namespace="com.taohan.online.exam.dao.ExamSubjectMiddleInfoMapper">
+<mapper namespace="com.haowei.online.exam.dao.ExamSubjectMiddleInfoMapper">
 	
-	<resultMap type="com.taohan.online.exam.po.ExamSubjectMiddleInfo" id="queryExamSubjectMiddle">
+	<resultMap type="com.haowei.online.exam.po.ExamSubjectMiddleInfo" id="queryExamSubjectMiddle">
 		<id column="esmId" property="esmId"/>
 		<!-- 试卷 -->
-		<association property="examPaper" javaType="com.taohan.online.exam.po.ExamPaperInfo">
+		<association property="examPaper" javaType="com.haowei.online.exam.po.ExamPaperInfo">
 			<id column="examPaperId" property="examPaperId"/>
 			<result column="examPaperName" property="examPaperName"/>
 			<result column="examPaperTime" property="examPaperTime"/>
 		</association>
 		<!-- 试题 -->
-		<association property="subject" javaType="com.taohan.online.exam.po.SubjectInfo">
+		<association property="subject" javaType="com.haowei.online.exam.po.SubjectInfo">
 			<id column="subjectId" property="subjectId"/>
 			<result column="subjectName" property="subjectName"/>
 			<result column="optionA" property="optionA"/>
@@ -27,12 +27,12 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 			<result column="subjectEasy" property="subjectEasy"/>
 			<result column="division" property="division"/>
 			<!-- 科目 -->
-			<association property="course" javaType="com.taohan.online.exam.po.CourseInfo">
+			<association property="course" javaType="com.haowei.online.exam.po.CourseInfo">
 				<id column="courseId" property="courseId"/>
 				<result column="courseName" property="courseName"/>
 			</association>
 			<!-- 年级 -->
-			<association property="grade" javaType="com.taohan.online.exam.po.GradeInfo">
+			<association property="grade" javaType="com.haowei.online.exam.po.GradeInfo">
 				<id column="gradeId" property="gradeId"/>
 				<result column="gradeName" property="gradeName"/>
 			</association>
@@ -41,7 +41,7 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 	
 	
 	<!-- 查询试卷-试题信息 -->
-	<select id="getExamPaperWithSubject" parameterType="com.taohan.online.exam.po.ExamSubjectMiddleInfo" resultMap="queryExamSubjectMiddle">
+	<select id="getExamPaperWithSubject" parameterType="com.haowei.online.exam.po.ExamSubjectMiddleInfo" resultMap="queryExamSubjectMiddle">
 		SELECT a.esmId, a.exampaperId, b.examPaperName, b.examPaperTime, c.*, d.courseName, e.gradeName
 		FROM ExamSubjectMiddleInfo a
 		INNER JOIN ExamPaperInfo b ON a.examPaperId=b.examPaperId
@@ -95,7 +95,7 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 	</delete>
 	
 	<!-- 根据试卷编号和试题编号进行查询 -->
-	<select id="getEsmByExamIdWithSubjectId" parameterType="com.taohan.online.exam.po.ExamSubjectMiddleInfo" resultType="int">
+	<select id="getEsmByExamIdWithSubjectId" parameterType="com.haowei.online.exam.po.ExamSubjectMiddleInfo" resultType="int">
 		SELECT esmId FROM ExamSubjectMiddleInfo
 		WHERE examPaperId=#{examPaper.examPaperId} AND subjectId=#{subject.subjectId}
 	</select>
