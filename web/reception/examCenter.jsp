@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<%@page import="com.taohan.online.exam.service.impl.ExamHistoryPaperServiceImpl"%>
-<%@page import="com.taohan.online.exam.po.ExamPlanInfo"%>
-<%@page import="com.taohan.online.exam.po.StudentInfo"%>
+<%@page import="com.haowei.online.exam.service.impl.ExamHistoryPaperServiceImpl"%>
+<%@page import="com.haowei.online.exam.po.ExamPlanInfo"%>
+<%@page import="com.haowei.online.exam.po.StudentInfo"%>
 <%@page import="java.util.HashMap"%>
 <%@page import="java.util.Map"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
@@ -22,7 +22,9 @@
  	<link rel="stylesheet" type="text/css" href="${path }/js/zeroModal/zeroModal.css" />
 </head>
 <body style="background-color: #EEEEEE;">
-	<div class="container" style="margin-top: 100px;">
+
+	<div class="container" style="margin-top: 50px;">
+		<img width=100% height=100% src="${pageContext.request.contextPath }/images/reception/peitu1.png" />
 		<div class="row clearfix">
 			<div class="col-md-12 column">
 				<div class="row" id="root-row">
@@ -31,7 +33,7 @@
 							<c:forEach items="${examPlans }" var="ep">
 								<div class="col-md-4">
 									<div class="thumbnail">
-										<img alt="300x200" src="${pageContext.request.contextPath }/images/reception/peitu1.jpg" />
+
 										<div class="caption">
 											<h3>
 												${ep.examPaper.examPaperName }

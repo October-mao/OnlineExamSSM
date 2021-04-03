@@ -22,14 +22,14 @@
  	</style>
 </head>
 <body>
-	<div style="width: 100%; height: 98px; background-color: #438EB9;">
-		<div style="float: left; width: 380px; height: 100%;line-height:80px;margin-left: -40px;">
+	<div style="width: 100%; height: 98px; background-color: #afb2b9;">
+		<div style="float: left; width: 380px; height: 100%;line-height:80px;margin-left: 10px;">
 			<a href="index.jsp" target="_top">
-				<img src="${path }/images/reception/logo_1.png" alt="WiseMan logo" style="width: 95%; height: 100%;" />
+				<img src="${path }/images/reception/logo_1.png" alt="WiseMan logo" style="width: 100%; height: 100%;" />
 			</a>
 		</div>
-		<div id="head-nav-show" style="float: left; width: 300px; height: 100%;margin-left: 112px;">
-			<div style="margin-top: 25px;width: 211px; height: 35px; background-color: #579EC8;line-height: 35px;text-align: center;">
+		<div id="head-nav-show" style="float: left; width: 300px; height: 100%;margin-left: 150px;">
+			<div style="margin-top: 30px;width: 211px; height: 35px; background-color: #afb2b9;line-height: 35px;text-align: center;">
 				<span id="date_time" style="color: #FFF;"></span>
 			</div>
 		</div>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<%@page import="com.taohan.online.exam.service.impl.CourseInfoServiceImpl"%>
-<%@page import="com.taohan.online.exam.po.CourseInfo"%>
+<%@page import="com.haowei.online.exam.service.impl.CourseInfoServiceImpl"%>
+<%@page import="com.haowei.online.exam.po.CourseInfo"%>
 <%@page import="java.util.List"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>

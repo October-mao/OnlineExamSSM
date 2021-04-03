@@ -17,7 +17,8 @@
  	<link rel="stylesheet" type="text/css" href="${path }/js/zeroModal/zeroModal.css" />
 </head>
 <body style="background-color: #EEEEEE;">
-	<div class="container" style="margin-top: 100px;">
+	<div class="container" style="margin-top: 50px;">
+		<img width=100% height=100% src="${pageContext.request.contextPath }/images/reception/peitu1.png" />
 		<div class="row clearfix">
 			<div class="col-md-12 column">
 				<div class="row">
@@ -26,7 +27,6 @@
 							<c:forEach items="${ehps }" var="ehp">
 								<div class="col-md-4">
 									<div class="thumbnail">
-										<img alt="300x200" src="${pageContext.request.contextPath }/images/reception/peitu2.jpg" />
 										<div class="caption">
 											<h3>
 												${ehp.examPaperName }

@@ -15,10 +15,8 @@
  	<link href="${path }/css/bootstrap/bootstrap.min.css" rel="stylesheet" />
 </head>
 <body style="background-color: #EEEEEE;">
-	<div class="jumbotron" style="height: 500px;padding-top: 100px; padding-bottom: 0px; margin-bottom: 0px;">
+	<div class="jumbotron" style="height: 300px;padding-top: 50px; padding-bottom: 0px; margin-bottom: 0px;">
 		<div style="padding: 20px;">
-<%--		<img src="${path }/images/reception/home-bg.png" width="100%"/>--%>
-
 	<div id="page-wrapper">
 		<div class="box" >
 			<br><br><br>
