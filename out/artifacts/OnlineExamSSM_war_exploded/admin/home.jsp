@@ -55,9 +55,9 @@
 		欢迎使用
 		<strong>
 			线上单元考试系统
-			<small>(v2.0)</small>
+			<small>(v1.0)</small>
 		</strong>
-		, 努力做教育服务
+		, 欢迎使用
 	</div>
 	<div class="state-overview clearfix">
 		<div class="col-lg-3 col-sm-5 totalDiv">

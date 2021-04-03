@@ -7,22 +7,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="15aac3e6-df4a-4db3-a5cb-05113cb00f57" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/web/images/reception/peitu1.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/OnlineExamSSM_war_exploded/admin/autoSubjectSelect.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/OnlineExamSSM_war_exploded/admin/autoSubjectSelect.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/OnlineExamSSM_war_exploded/admin/head.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/OnlineExamSSM_war_exploded/admin/head.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/OnlineExamSSM_war_exploded/admin/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/OnlineExamSSM_war_exploded/admin/login.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/OnlineExamSSM_war_exploded/reception/examCenter.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/OnlineExamSSM_war_exploded/reception/examCenter.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/OnlineExamSSM_war_exploded/reception/examHistory.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/OnlineExamSSM_war_exploded/reception/examHistory.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/OnlineExamSSM_war_exploded/reception/home.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/OnlineExamSSM_war_exploded/reception/home.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/admin/autoSubjectSelect.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/admin/autoSubjectSelect.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/admin/head.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/admin/head.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/admin/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/admin/login.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/images/reception/logo_1.png" beforeDir="false" afterPath="$PROJECT_DIR$/web/images/reception/logo_1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/images/reception/peitu1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/reception/examCenter.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/reception/examCenter.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/reception/examHistory.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/reception/examHistory.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/reception/home.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/reception/home.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/OnlineExamSSM_war_exploded/admin/home.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/OnlineExamSSM_war_exploded/admin/home.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/js/kindeditor/examples/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/js/kindeditor/examples/index.css" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -170,7 +157,7 @@
       <workItem from="1617450709410" duration="841000" />
       <workItem from="1617452798508" duration="1097000" />
       <workItem from="1617453938750" duration="152000" />
-      <workItem from="1617454123446" duration="2940000" />
+      <workItem from="1617454123446" duration="4232000" />
     </task>
     <servers />
   </component>
