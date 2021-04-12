@@ -7,8 +7,8 @@ import org.springframework.stereotype.Component;
   *
   * <p>Title: ExamChooseInfo</p>
   * <p>Description: 考生考试选择答案信息</p>
-  * @author: taohan
-  * @date: 2018-8-25
+  * @author: haowei
+  * @date: 2020-12-25
   * @time: 上午10:23:38
   * @version: 1.0
   */

@@ -10,8 +10,8 @@ import org.springframework.stereotype.Repository;
   *
   * <p>Title: ExamSubjectMiddleInfoMapper</p>
   * <p>Description: </p>
-  * @author: taohan
-  * @date: 2018-8-20
+  * @author: haowei
+  * @date: 2020-12-20
   * @time: 下午4:15:55
   * @version: 1.0
   */

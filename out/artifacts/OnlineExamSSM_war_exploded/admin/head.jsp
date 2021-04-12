@@ -56,17 +56,17 @@
     	date_time();
     	$(function() {
     		$("#loginTeacher").mouseover(function() {
-    			$(this).css("border-left", "2px solid #EC870E");
+    			$(this).css("border-left", "2px solid #afb2b9");
     		}).mouseout(function() {
-    			$(this).css("border-left", "0px solid #EC870E");    			
+    			$(this).css("border-left", "0px solid #afb2b9");
     		});
     		$("#head-nav-show").mouseover(function() {
     			if($(".index_title").size() <= 0) {
     				return false;
     			}
-    			$(this).css("border-left", "2px solid #EC870E");
+    			$(this).css("border-left", "2px solid #afb2b9");
     		}).mouseout(function() {
-    			$(this).css("border-left", "0px solid #EC870E");    			
+    			$(this).css("border-left", "0px solid #afb2b9");
     		});
     	});
     	

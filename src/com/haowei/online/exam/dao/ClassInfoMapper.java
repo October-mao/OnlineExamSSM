@@ -11,8 +11,8 @@ import org.springframework.stereotype.Repository;
   *
   * <p>Title: ClassInfoMapper</p>
   * <p>Description: 班级信息代理接口</p>
-  * @author: taohan
-  * @date: 2018-8-13
+  * @author: haowei
+  * @date: 2020-12-13
   * @time: 下午2:08:29
   * @version: 1.0
   */

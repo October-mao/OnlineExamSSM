@@ -15,8 +15,8 @@ import org.junit.Test;
   *
   * <p>Title: ExamSubjectMiddleInfoTest</p>
   * <p>Description: </p>
-  * @author: taohan
-  * @date: 2018-8-21
+  * @author: haowei
+  * @date: 2020-12-21
   * @time: 下午12:24:09
   * @version: 1.0
   */

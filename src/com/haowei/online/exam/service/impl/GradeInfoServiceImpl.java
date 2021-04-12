@@ -16,8 +16,8 @@ import com.haowei.online.exam.service.GradeInfoService;
   *
   * <p>Title: GradeInfoServiceImpl</p>
   * <p>Description: </p>
-  * @author: taohan
-  * @date: 2018-8-14
+  * @author: haowei
+  * @date: 2020-12-14
   * @time: 上午9:57:27
   * @version: 1.0
   */

@@ -30,8 +30,8 @@ import com.haowei.online.exam.service.TeacherInfoService;
   *
   * <p>Title: ClassInfoHandler</p>
   * <p>Description: 班级</p>
-  * @author: taohan
-  * @date: 2018-8-13
+  * @author: haowei
+  * @date: 2020-12-13
   * @time: 下午2:18:14
   * @version: 1.0
   */

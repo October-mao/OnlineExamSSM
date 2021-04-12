@@ -21,8 +21,8 @@ import com.haowei.online.exam.po.StudentExamInfo;
   *
   * <p>Title: StudentExamInfoCharts</p>
   * <p>Description: 学生考试信息 图表 Json 数据 生成</p>
-  * @author: taohan
-  * @date: 2018-9-19
+  * @author: haowei
+  * @date: 2020-12-19
   * @time: 上午10:26:55
   * @version: 1.0
   */

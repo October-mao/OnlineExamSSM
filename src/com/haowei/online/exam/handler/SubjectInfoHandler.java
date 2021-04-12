@@ -34,8 +34,8 @@ import com.haowei.online.exam.service.SubjectInfoService;
   *
   * <p>Title: SubjectInfoHandler</p>
   * <p>Description: 试题</p>
-  * @author: taohan
-  * @date: 2018-8-17
+  * @author: haowei
+  * @date: 2020-12-17
   * @time: 下午4:33:48
   * @version: 1.0
   */

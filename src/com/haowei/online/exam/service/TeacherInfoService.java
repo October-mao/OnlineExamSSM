@@ -12,8 +12,8 @@ import com.haowei.online.exam.po.TeacherInfo;
   *
   * <p>Title: TeacherInfoService</p>
   * <p>Description: </p>
-  * @author: taohan
-  * @date: 2018-8-13
+  * @author: haowei
+  * @date: 2020-12-13
   * @time: 下午3:15:35
   * @version: 1.0
   */

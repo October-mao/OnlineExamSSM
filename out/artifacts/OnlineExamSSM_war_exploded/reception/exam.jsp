@@ -189,8 +189,8 @@
     		});
     		
     		//加载已选试题对应答题卡信息
-    		for(var i=0; i<$("li").size(); i++) {
-    			for(var j=0; j<4; j++) {
+    		for(var i=0; i < $("li").size(); i++) {
+    			for(var j=0; j < 4; j++) {
     				//如果是简答
     				if($("dd").eq(i).children("div").eq(1).children("p").eq(j).attr('data-type') == 'textarea'){
     					var e = $("dd").eq(i).children("div").eq(1).children("p").eq(j).children("textarea");

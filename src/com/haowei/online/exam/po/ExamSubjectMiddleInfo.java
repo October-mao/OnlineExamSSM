@@ -7,8 +7,8 @@ import org.springframework.stereotype.Component;
   *
   * <p>Title: ExamSubjectMiddleInfo</p>
   * <p>Description: 试卷、试题中间关联表</p>
-  * @author: taohan
-  * @date: 2018-8-20
+  * @author: haowei
+  * @date: 2020-12-20
   * @time: 下午1:29:29
   * @version: 1.0
   */

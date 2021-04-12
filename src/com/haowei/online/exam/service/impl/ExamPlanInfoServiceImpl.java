@@ -17,8 +17,8 @@ import com.haowei.online.exam.service.ExamPlanInfoService;
   *
   * <p>Title: ExamPlanInfoServiceImpl</p>
   * <p>Description: </p>
-  * @author: taohan
-  * @date: 2018-8-22
+  * @author: haowei
+  * @date: 2020-12-22
   * @time: 下午4:06:02
   * @version: 1.0
   */

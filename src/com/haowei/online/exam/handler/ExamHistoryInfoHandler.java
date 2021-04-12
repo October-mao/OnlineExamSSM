@@ -15,8 +15,8 @@ import com.haowei.online.exam.service.ExamHistoryPaperService;
   *
   * <p>Title: ExamHistoryInfoHandler</p>
   * <p>Description: </p>
-  * @author: taohan
-  * @date: 2018-9-5
+  * @author: haowei
+  * @date: 2020-12-5
   * @time: 下午4:51:48
   * @version: 1.0
   */

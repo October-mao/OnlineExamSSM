@@ -35,8 +35,8 @@ import com.haowei.online.exam.service.SubjectInfoService;
   *
   * <p>Title: ExamSubjectMiddleInfoHandler</p>
   * <p>Description: 试卷试题--关联</p>
-  * @author: taohan
-  * @date: 2018-8-20
+  * @author: haowei
+  * @date: 2020-12-20
   * @time: 下午4:21:05
   * @version: 1.0
   */
@@ -337,11 +337,9 @@ public class ExamSubjectMiddleInfoHandler {
 				logger.info("索引 "+index+" 试题编号 "+subjectId+" 成立");
 			}
 		}
-		
 		//添加试题信息
 		addMap.put("examPaperId", examPaperId);
 		addMap.put("subjectIds", subjectIds);
-		
 		//总分和题目数量信息
 		Map<String, Object> scoreWithNum = new HashMap<String, Object>();
 		scoreWithNum.put("subjectNum", subjectSum);
@@ -351,11 +349,9 @@ public class ExamSubjectMiddleInfoHandler {
 		examPaperInfoService.isUpdateExamPaperScore(scoreWithNum);
 		//修改试卷题目数量
 		examPaperInfoService.isUpdateExamPaperSubjects(scoreWithNum);
-		
 		//添加
 		logger.info("添加试题到试卷 "+examPaperId);
 		esmService.isAddESM(addMap);
-		
 		response.getWriter().print("t");
 	}
 }

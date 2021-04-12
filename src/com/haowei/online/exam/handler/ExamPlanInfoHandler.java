@@ -29,8 +29,8 @@ import com.haowei.online.exam.service.ExamPlanInfoService;
   *
   * <p>Title: ExamPlanInfoHandler</p>
   * <p>Description: 考试安排</p>
-  * @author: taohan
-  * @date: 2018-8-22
+  * @author: haowei
+  * @date: 2020-12-22
   * @time: 下午4:06:51
   * @version: 1.0
   */

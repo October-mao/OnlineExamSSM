@@ -5056,15 +5056,15 @@ a.thumbnail.active {
   color: inherit;
 }
 .alert-success {
-  color: #3c763d;
-  background-color: #dff0d8;
-  border-color: #d6e9c6;
+  color: #ffffff;
+  background-color: #afb2b9;
+  border-color: #afb2b9;
 }
 .alert-success hr {
-  border-top-color: #c9e2b3;
+  border-top-color: #9fe2d0;
 }
 .alert-success .alert-link {
-  color: #2b542c;
+  color: #66ccff;
 }
 .alert-info {
   color: #31708f;

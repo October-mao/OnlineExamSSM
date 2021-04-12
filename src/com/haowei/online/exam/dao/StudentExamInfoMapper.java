@@ -9,8 +9,8 @@ import org.springframework.stereotype.Repository;
   *
   * <p>Title: StudentExamInfoMapper</p>
   * <p>Description: </p>
-  * @author: taohan
-  * @date: 2018-9-19
+  * @author: haowei
+  * @date: 2020-12-19
   * @time: 上午10:07:04
   * @version: 1.0
   */

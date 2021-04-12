@@ -14,7 +14,6 @@
 			+ path;
 %>
 <c:set var="path" value="<%=basePath%>"></c:set>
-<link href='${path }/images/reception/index.png' rel='shortcut icon' type='image/x-icon'>
 <link href="${path }/css/bootstrap/bootstrap.min.css" rel="stylesheet" />
 <link rel="stylesheet" type="text/css" href="${path }/js/zeroModal/zeroModal.css" />
 </head>

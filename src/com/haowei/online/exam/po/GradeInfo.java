@@ -7,8 +7,8 @@ import org.springframework.stereotype.Component;
   *
   * <p>Title: GradeInfo</p>
   * <p>Description: 年级实体类</p>
-  * @author: taohan
-  * @date: 2018-8-14
+  * @author: haowei
+  * @date: 2020-12-14
   * @time: 上午8:57:29
   * @version: 1.0
   */

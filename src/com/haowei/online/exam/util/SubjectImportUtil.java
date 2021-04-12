@@ -20,8 +20,8 @@ import com.haowei.online.exam.po.SubjectInfo;
   *
   * <p>Title: SubjectImportUtil</p>
   * <p>Description: 试题文件导入工具类</p>
-  * @author: taohan
-  * @date: 2018-9-6
+  * @author: haowei
+  * @date: 2021-1-6
   * @time: 下午2:42:11
   * @version: 1.0
   */

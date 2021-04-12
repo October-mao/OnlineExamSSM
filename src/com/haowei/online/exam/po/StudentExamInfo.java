@@ -6,8 +6,8 @@ import org.springframework.stereotype.Component;
   *
   * <p>Title: StudentExamInfo</p>
   * <p>Description: 学生考试信息  主要用于前台图表绘制 数据封装</p>
-  * @author: taohan
-  * @date: 2018-9-19
+  * @author: haowei
+  * @date: 2020-12-19
   * @time: 上午9:56:29
   * @version: 1.0
   */

@@ -7,8 +7,8 @@ import org.springframework.stereotype.Component;
   *
   * <p>Title: StudentInfo</p>
   * <p>Description: </p>
-  * @author: taohan
-  * @date: 2018-8-16
+  * @author: haowei
+  * @date: 2020-12-16
   * @time: 上午9:42:49
   * @version: 1.0
   */

@@ -11,8 +11,8 @@ import com.haowei.online.exam.po.CourseInfo;
   *
   * <p>Title: CourseInfoService</p>
   * <p>Description: </p>
-  * @author: taohan
-  * @date: 2018-8-15
+  * @author: haowei
+  * @date: 2020-12-15
   * @time: 下午5:30:21
   * @version: 1.0
   */

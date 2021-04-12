@@ -24,8 +24,8 @@ import com.haowei.online.exam.service.TeacherInfoService;
   *
   * <p>Title: TeacherInfoHandler</p>
   * <p>Description: 教师</p>
-  * @author: taohan
-  * @date: 2018-8-14
+  * @author: haowei
+  * @date: 2020-12-14
   * @time: 上午9:16:53
   * @version: 1.0
   */

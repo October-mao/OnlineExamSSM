@@ -23,7 +23,7 @@
  			/*width: 100px;*/
  			height: 30px;
  			line-height: 30px;
- 			border: 1px solid green;
+ 			border: 1px solid #66ccff;
  			text-align: center;
  			margin-left: 9px;
  			cursor: pointer;
@@ -52,9 +52,9 @@
     <script type="text/javascript">
     	$(function() {
     		$("#loginTeacher").mouseover(function() {
-    			$(this).css("border-left", "2px solid #EC870E");
+    			$(this).css("border-left", "2px solid #66ccff");
     		}).mouseout(function() {
-    			$(this).css("border-left", "0px solid #EC870E");    			
+    			$(this).css("border-left", "0px solid #66ccff");
     		});
     		$("#head-nav-show").mouseover(function() {
     			if($(".index_title").size() <= 0) {

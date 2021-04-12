@@ -16,7 +16,7 @@
 </head>
 <body>
 	<div style="width:100%;height:100%;text-align: center;">
-		<h2>${success }</h2>
+		<h2>${success}</h2>
 	</div>
 
 	<!-- js引入 -->

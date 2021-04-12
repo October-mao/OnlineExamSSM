@@ -12,8 +12,8 @@ import com.haowei.online.exam.po.SubjectInfo;
   *
   * <p>Title: SubjectInfoService</p>
   * <p>Description: </p>
-  * @author: taohan
-  * @date: 2018-8-17
+  * @author: haowei
+  * @date: 2020-12-17
   * @time: 下午4:31:48
   * @version: 1.0
   */

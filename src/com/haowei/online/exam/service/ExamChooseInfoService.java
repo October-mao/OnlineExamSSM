@@ -10,8 +10,8 @@ import org.springframework.stereotype.Repository;
   *
   * <p>Title: ExamChooseInfoService</p>
   * <p>Description: </p>
-  * @author: taohan
-  * @date: 2018-8-25
+  * @author: haowei
+  * @date: 2020-12-25
   * @time: 上午10:34:29
   * @version: 1.0
   */

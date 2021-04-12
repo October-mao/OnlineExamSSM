@@ -40,18 +40,17 @@
 		.home dt{background-image:url(../images/left/home.png)}
 		.system_log dt{background-image:url(../images/left/system.png)}
 		.custom dt{background-image:url(../images/left/p1.png)}
-		.channel dt{background-image:url(../images/left/p2.png)}
+		.teacher dt{background-image:url(../images/left/p2.png)}
+		.channel dt{background-image:url(../images/left/p3.png)}
 		.app dt{background-image:url(../images/left/paper.png)}
 		.cloud dt{background-image:url(../images/left/subject.png)}
 		.syetem_management dt{background-image:url(../images/left/plan.png)}
-		.source dt{background-image:url(../images/left/clock.png)}
 		.statistics dt{background-image:url(../images/left/statistics.png)}
 		.leftsidebar_box dl dd:last-child{padding-bottom:10px;}
 	</style>
 </head>
 <body id="bg">
 	<c:set var="power" value="${sessionScope.adminPower }"></c:set>
-	
 	<div class="container">
 		<div class="leftsidebar_box">
 			<div class="line"></div>
@@ -72,7 +71,7 @@
 				<dd><a href="${path }/preStudentCount" target="right" id="11" class="handle-view">&emsp;各班级总人数&emsp;&emsp;&emsp;</a></dd>
 			</dl>
 			
-			<dl class="custom">
+			<dl class="teacher">
 				<dt onClick="changeImage()">教师管理<img src="${path }/images/left/select_xl01.png" /></dt>
 				<dd class="first_dd"><a href="../teachers" target="right" id="4" class="handle-view">&emsp;所有教师&emsp;&emsp;&emsp;</a></dd>
 			</dl>
@@ -97,11 +96,7 @@
 			<dl class="syetem_management">
 				<dt>考试安排管理<img src="${path }/images/left/select_xl01.png" /></dt>
 				<dd class="first_dd"><a href="../examPlans" target="right" id="9" class="handle-view">&emsp;待考信息&emsp;&emsp;&emsp;</a></dd>
-			</dl>
-		
-			<dl class="source">
-				<dt>以往考试信息<img src="${path }/images/left/select_xl01.png" /></dt>
-				<dd class="first_dd"><a href="../historys" target="right" id="10" class="handle-view">&emsp;所有记录&emsp;&emsp;&emsp;</a></dd>
+				<dd class="first_dd"><a href="../historys" target="right" id="10" class="handle-view">&emsp;以往考试信息&emsp;&emsp;&emsp;</a></dd>
 			</dl>
 		
 		</div>

@@ -12,7 +12,6 @@
 	    String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path;
     %>
 	<c:set var="path" value="<%=basePath %>"></c:set>
-	<link href='${path }/images/admin/admin_index.png' rel='shortcut icon' type='image/x-icon' />
  	<link href="${path }/css/bootstrap/bootstrap.min.css" rel="stylesheet" />
 	<!-- js引入 -->
     <script src="${path }/js/jquery.js"></script>
@@ -21,7 +20,7 @@
 	<c:if test="${sessionScope.loginTeacher == null }">
 		<%response.sendRedirect("../admin/login.jsp"); %>
 	</c:if>
-	<frameset rows="15%, *" frameborder="0">
+	<frameset rows="13%, *" frameborder="0">
     	<frame src="${path }/admin/head.jsp" name="head" noresize="noresize" />
     	<frameset cols="15%, *" frameborder="0">
     		<frame src="${path }/admin/left.jsp" name="left" noresize="noresize" />

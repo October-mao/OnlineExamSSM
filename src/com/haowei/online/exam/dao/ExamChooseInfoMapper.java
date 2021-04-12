@@ -12,8 +12,8 @@ import com.haowei.online.exam.po.ExamChooseInfo;
   *
   * <p>Title: ExamChooseInfoMapper</p>
   * <p>Description: </p>
-  * @author: taohan
-  * @date: 2018-8-25
+  * @author: haowei
+  * @date: 2020-12-25
   * @time: 上午10:33:21
   * @version: 1.0
   */
