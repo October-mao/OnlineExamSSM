@@ -17,7 +17,7 @@
 </head>
 <body>
 
-	<div style="text-align: center;">
+	<div>
 		<table class="table table-striped table-hover table-condensed">
 			<thead>
 				<tr>
@@ -27,9 +27,9 @@
 					<th>登录密码</th>
 					<th>就读班级</th>
 					<th>就读年级</th>
-					<c:if test="${sessionScope.adminPower == 1 }">
-						<th>操作</th>
-					</c:if>
+					<th>操作
+						<button type="button" class="btn btn-xs btn-info" onclick="_iframe(0, 'preAddStudent','admin/studentedit.jsp')">添加</button>
+					</th>
 				</tr>
 			</thead>
 			<tbody>
@@ -63,7 +63,7 @@
 			<input type="hidden" value="DELETE" name="_method" />
 		</form>
 		<c:if test="${pageTotal > 1 }">
-			<div>
+			<div style="text-align: center;">
 				<ul class="pagination">
 					<li><a href="students?startPage=1">首页</a></li>
 					<c:if test="${pageNow-1 > 0 }">

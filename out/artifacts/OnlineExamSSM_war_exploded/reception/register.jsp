@@ -48,7 +48,7 @@
 						<div class="form-group">
 							 <label for="class" class="col-sm-2 control-label">就读班级</label>
 							<div class="col-sm-10">
-								<select id="classId" class="selectpicker" name="classInfo.classId" id="class" data-live-search="true">
+								<select class="selectpicker" id="classId" name="classInfo.classId" id="class" data-live-search="true">
 									<c:forEach items="${classs }" var="clazz">
 									<option value="${clazz.classId }">${clazz.className }</option>
 									</c:forEach>
@@ -59,7 +59,7 @@
 						<div class="form-group">
 							<div class="col-sm-offset-2 col-sm-10">
 								 <button type="button" class="btn btn-default btn-lg btn-primary btn-block" id="signSubmit">
-							 		注  册
+							 		添  加
 								 </button>
 							</div>
 						</div>

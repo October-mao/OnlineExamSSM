@@ -17,7 +17,7 @@
 </head>
 <body>
 
-	<div style="text-align: center;">
+	<div >
 		<table class="table table-striped table-hover table-condensed">
 			<thead>
 				<tr>
@@ -29,8 +29,7 @@
 					<th>班主任</th>
 					<c:if test="${sessionScope.adminPower == 1 }">
 						<th>操作
-							&emsp;
-							<button type="button" class="btn btn-xs btn-info" onclick="_iframe(0, 'admin/teacheredit.jsp', 'teachers')">添加</button>
+							<button type="button" class="btn btn-xs btn-info" onclick="_iframe(0, 'admin/teacheredit.jsp','teachers')">添加</button>
 						</th>
 					</c:if>
 				</tr>
@@ -91,7 +90,7 @@
 		<form action="class" method="post">
 			<input type="hidden" value="DELETE" name="_method" />
 		</form>
-		<div>
+		<div style="text-align: center;">
 			<ul class="pagination"> 
 				<c:if test="${pageTotal > 1 }">
 					<ul class="pagination">

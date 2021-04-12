@@ -24,7 +24,7 @@
     	<frame src="${path }/admin/head.jsp" name="head" noresize="noresize" />
     	<frameset cols="15%, *" frameborder="0">
     		<frame src="${path }/admin/left.jsp" name="left" noresize="noresize" />
-    		<frameset rows="7%, *">
+    		<frameset rows="5%, *">
 	    		<frame src="${path }/admin/nav.jsp" name="nav" noresize="noresize" />
 	    		<frame src="${path }/admin/home.jsp" name="right" noresize="noresize" />    			
     		</frameset>

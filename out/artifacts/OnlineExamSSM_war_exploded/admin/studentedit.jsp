@@ -58,7 +58,7 @@
 						<div class="form-group">
 							 <label for="studentAccount" class="col-sm-2 control-label">考试登录账户</label>
 							<div class="col-sm-5">
-								<input class="form-control" id="studentAccount" name="studentAccount" type="text" value="${student.studentAccount }" readonly="readonly" unselectable="on" onfocus="this.blur()" placeholder="学生考试登录账户" />
+								<input class="form-control" id="studentAccount" name="studentAccount" type="text" value="${student.studentAccount }"   placeholder="学生考试登录账户" />
 							</div>
 						</div>
 						<div class="form-group">

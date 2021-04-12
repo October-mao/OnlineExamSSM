@@ -196,10 +196,8 @@ public class StudentInfoHandler {
 	public ModelAndView preAddStudent() {
 		logger.info("预添加学生信息");
 		ModelAndView model = new ModelAndView();
-		model.setViewName("/admin/studentedit");
-		List<ClassInfo> classes = classInfoService.getClasses(null);
-		model.addObject("classes", classes);
-
+		model.setViewName("admin/studentedit");
+		model.addObject("classes", classInfoService.getClasses(null));
 		return model;
 	}
 	
@@ -318,7 +316,7 @@ public class StudentInfoHandler {
 		
 		response.getWriter().print("t");
 	}
-	
+
 	/**
 	 * 预注册
 	 * @return
@@ -330,7 +328,9 @@ public class StudentInfoHandler {
 		model.addObject("classs", classInfoService.getClasses(null));
 		return model;
 	}
-	
+
+
+
 	/**
 	 * 学生进入考试
 	 * @param classId 班级编号

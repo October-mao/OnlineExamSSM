@@ -26,7 +26,6 @@
 					<th>班主任</th>
 					<c:if test="${sessionScope.adminPower == 1 }">
 						<th>操作
-							&emsp;
 							<a href="preAddClass" class="btn btn-xs btn-info">添加</a>
 						</th>
 					</c:if>
