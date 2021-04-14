@@ -9,26 +9,9 @@
     <list default="true" id="15aac3e6-df4a-4db3-a5cb-05113cb00f57" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/OnlineExamSSM_war_exploded/WEB-INF/classes/com/haowei/online/exam/handler/StudentInfoHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/OnlineExamSSM_war_exploded/WEB-INF/classes/com/haowei/online/exam/handler/StudentInfoHandler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/OnlineExamSSM_war_exploded/admin/classes.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/OnlineExamSSM_war_exploded/admin/classes.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/OnlineExamSSM_war_exploded/admin/home.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/OnlineExamSSM_war_exploded/admin/home.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/OnlineExamSSM_war_exploded/admin/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/OnlineExamSSM_war_exploded/admin/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/OnlineExamSSM_war_exploded/admin/studentedit.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/OnlineExamSSM_war_exploded/admin/studentedit.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/OnlineExamSSM_war_exploded/admin/students.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/OnlineExamSSM_war_exploded/admin/students.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/OnlineExamSSM_war_exploded/admin/teachers.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/OnlineExamSSM_war_exploded/admin/teachers.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/OnlineExamSSM_war_exploded/js/bootstrap-select/bootstrap-select.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/OnlineExamSSM_war_exploded/js/bootstrap-select/bootstrap-select.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/OnlineExamSSM_war_exploded/js/bootstrap-select/bootstrap-select.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/OnlineExamSSM_war_exploded/js/bootstrap-select/bootstrap-select.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/OnlineExamSSM_war_exploded/reception/register.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/OnlineExamSSM_war_exploded/reception/register.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/OnlineExamSSM_war_exploded/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/OnlineExamSSM_war_exploded/WEB-INF/web.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/OnlineExamSSM/com/haowei/online/exam/handler/StudentInfoHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OnlineExamSSM/com/haowei/online/exam/handler/StudentInfoHandler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/haowei/online/exam/handler/StudentInfoHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/haowei/online/exam/handler/StudentInfoHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/admin/classes.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/admin/classes.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/admin/home.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/admin/home.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/admin/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/admin/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/admin/studentedit.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/admin/studentedit.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/admin/students.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/admin/students.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/admin/teachers.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/admin/teachers.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/js/bootstrap-select/bootstrap-select.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/js/bootstrap-select/bootstrap-select.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/js/bootstrap-select/bootstrap-select.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/js/bootstrap-select/bootstrap-select.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/reception/register.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/reception/register.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
