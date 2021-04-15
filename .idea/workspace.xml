@@ -7,11 +7,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="15aac3e6-df4a-4db3-a5cb-05113cb00f57" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/matem.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/matem.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/OnlineExamSSM_war_exploded/WEB-INF/classes/com/haowei/online/exam/handler/StudentInfoHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/OnlineExamSSM_war_exploded/WEB-INF/classes/com/haowei/online/exam/handler/StudentInfoHandler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/OnlineExamSSM_war_exploded/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/OnlineExamSSM_war_exploded/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OnlineExamSSM/com/haowei/online/exam/handler/StudentInfoHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OnlineExamSSM/com/haowei/online/exam/handler/StudentInfoHandler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/OnlineExamSSM_war_exploded/WEB-INF/classes/com/haowei/online/exam/handler/SubjectInfoHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/OnlineExamSSM_war_exploded/WEB-INF/classes/com/haowei/online/exam/handler/SubjectInfoHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/OnlineExamSSM_war_exploded/WEB-INF/classes/com/haowei/online/exam/interceptor/LoginInterceptor.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/OnlineExamSSM_war_exploded/WEB-INF/classes/com/haowei/online/exam/interceptor/LoginInterceptor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/OnlineExamSSM_war_exploded/WEB-INF/classes/config/db.properties" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/OnlineExamSSM_war_exploded/WEB-INF/classes/config/db.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OnlineExamSSM/com/haowei/online/exam/handler/SubjectInfoHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OnlineExamSSM/com/haowei/online/exam/handler/SubjectInfoHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OnlineExamSSM/com/haowei/online/exam/interceptor/LoginInterceptor.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OnlineExamSSM/com/haowei/online/exam/interceptor/LoginInterceptor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OnlineExamSSM/config/db.properties" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OnlineExamSSM/config/db.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/haowei/online/exam/handler/SubjectInfoHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/haowei/online/exam/handler/SubjectInfoHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/haowei/online/exam/interceptor/LoginInterceptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/haowei/online/exam/interceptor/LoginInterceptor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/config/db.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/config/db.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/config/springmvc/springmvc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/config/springmvc/springmvc.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -46,7 +53,7 @@
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="File.Encoding" />
+    <property name="settings.editor.selected.configurable" value="spring" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -179,6 +186,7 @@
       <workItem from="1618190143996" duration="7627000" />
       <workItem from="1618198399466" duration="9350000" />
       <workItem from="1618213248076" duration="3977000" />
+      <workItem from="1618458604524" duration="13999000" />
     </task>
     <servers />
   </component>
