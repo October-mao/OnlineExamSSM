@@ -28,7 +28,7 @@
 					<th>就读班级</th>
 					<th>就读年级</th>
 					<th>操作
-						<button type="button" class="btn btn-xs btn-info" onclick="_iframe(0, 'preAddStudent','admin/studentedit.jsp')">添加</button>
+						<button type="button" class="btn btn-xs btn-info" onclick="_iframe(0, 'preAddStudent','students')">添加</button>
 					</th>
 				</tr>
 			</thead>

@@ -56,11 +56,9 @@ public class SubjectImportUtil {
 			XSSFSheet sheet = workBook.getSheet("Sheet1");
 			//总行数
 			int sumRow = sheet.getLastRowNum()-sheet.getFirstRowNum();
-			
 			//第一行
 			XSSFRow firstRow = sheet.getRow(0);
 			getCellIndexs(firstRow);
-			
 			for (int i = 1; i <= sumRow; i++) {
 				XSSFRow row = (XSSFRow) sheet.getRow(i);
 				XSSFCell subjectName = row.getCell(subjectNameIndex);
@@ -76,12 +74,10 @@ public class SubjectImportUtil {
 				
 				SubjectInfo subject = new SubjectInfo();
 				subject.setSubjectName(subjectName.toString());
-				
 				subject.setOptionA(optionA == null ? "" : optionA.toString());
 				subject.setOptionB(optionB == null ? "" : optionB.toString());
 				subject.setOptionC(optionC == null ? "" : optionC.toString());
 				subject.setOptionD(optionD == null ? "" : optionD.toString());
-				
 				subject.setRightResult(rightResult.toString());
 				subject.setSubjectScore(Integer.parseInt(subjectScore.toString()));
 				//试题类型

@@ -313,7 +313,6 @@ public class StudentInfoHandler {
 		student.setClassInfo(classInfo);
 		logger.info("学生注册 "+student);
 		int row = studentInfoService.isAddStudent(student);
-		
 		response.getWriter().print("t");
 	}
 
@@ -444,14 +443,12 @@ public class StudentInfoHandler {
 			@RequestParam("classId") Integer classId,
 			@RequestParam("gradeId") Integer gradeId) {
 		logger.info("学生 "+studentId+" 提交了试卷 "+examPaperId);
-		
 		//获取当前学生当前试卷所选择的全部答案
 		Map<String, Object> map = new HashMap<String, Object>();
 		map.put("studentId", studentId);
 		map.put("examPaperId", examPaperId);
 		List<ExamChooseInfo> chooses = examChooseInfoService.getChooseInfoWithSumScore(map);
 		logger.info("学生 "+studentId+" 共选择了 "+chooses.size()+" 道题");
-		
 		//总分记录
 		int sumScore = 0;
 		for (ExamChooseInfo choose : chooses) {
@@ -466,20 +463,17 @@ public class StudentInfoHandler {
 				logger.info("学生 "+studentId+" 第 "+subject.getSubjectId()+" 答案选择错误 "+chooseResult+" 正确答案为 "+rightResult+" 当前总分 "+sumScore);				
 			}
 		}
-		
 		/*
 		 * 首先判断当前记录是否已经添加过
 		 * 防止当前学生点击提交后，系统倒计时再次进行提交
 		 */
 		int count = examHistoryPaperService.getHistoryInfoWithIds(map);
-		
 		if (count == 0) {
 			//添加到历史记录
 			map.put("examScore", sumScore);
 			int row = examHistoryPaperService.isAddExamHistory(map);
 			logger.info("学生 "+studentId+" 提交的试卷 "+examPaperId+" 已成功处理，并添加到历史记录中");
 		}
-		
 		return "redirect:willexams?gradeId="+gradeId+"&classId="+classId+"&studentId="+studentId;
 	}
 	

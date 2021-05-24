@@ -15,9 +15,6 @@
 		expression="org.springframework.stereotype.Controller" />
 	</context:component-scan>
 
-
-
-
 	<!-- 启动 mvc 注解驱动 -->
 	<mvc:annotation-driven></mvc:annotation-driven>
 	
@@ -50,7 +47,7 @@
 	<mvc:interceptors>
 		<mvc:interceptor>
 			<mvc:mapping path="/admin/**"/>
-			<bean class="com.haowei.online.exam.interceptor.LoginInterceptor"></bean>
+			<bean class="com.haowei.online.exam.interceptor.LoginInterceptor"/>
 		</mvc:interceptor>
 	</mvc:interceptors>
 </beans>

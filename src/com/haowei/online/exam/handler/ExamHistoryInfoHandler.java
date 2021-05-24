@@ -35,9 +35,7 @@ public class ExamHistoryInfoHandler {
 		List<ExamHistoryInfo> historys = examHistoryPaperService.getExamHistoryToTeacher();
 		ModelAndView model = new ModelAndView("admin/examHistorys");
 		logger.info("教师 查询历史考试信息 SIZE "+historys.size());
-		
 		model.addObject("historys", historys);
-		
 		return model;
 	}
 }

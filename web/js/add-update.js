@@ -17,7 +17,7 @@ $("#sub").click(function sub() {
 				overlay : false,
 				ok : true,
 				okFn:function(){
-					window.top.frames["right"].history.back(-1);
+					window.location.reload();
 				}
 			});
 			

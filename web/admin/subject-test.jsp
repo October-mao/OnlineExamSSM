@@ -56,7 +56,7 @@ function subjectUpdate() {
 				width : '200px',
 				height : '130px',
 				overlay : false,
-				ok : true,
+				ok : true
 			});
 		}
 	});

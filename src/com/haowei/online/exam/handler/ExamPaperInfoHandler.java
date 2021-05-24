@@ -120,16 +120,8 @@ public class ExamPaperInfoHandler {
 	 */
 	@RequestMapping(value = "/examPaper/examPaper", method = RequestMethod.POST)
 	public String isUpdateOrAddCourse(
-			@RequestParam(value = "examPaperId", required = false) Integer examPaperId,
-			@RequestParam(value = "isupdate", required = false) Integer isUpdate,
-			@RequestParam(value = "examPaperName", required = false) String examPaperName,
-			@RequestParam("subjectNum") Integer subjectNum,
-			@RequestParam("examPaperScore") Integer examPaperScore,
-			@RequestParam("examPaperTime") Integer examPaperTime,
-			@RequestParam("division") Integer division,
-			@RequestParam("examPaperEasy") Integer examPaperEasy,
-			@RequestParam("gradeId") Integer gradeId) {
-
+			@RequestParam(value = "examPaperId", required = false) Integer examPaperId, @RequestParam(value = "isupdate", required = false) Integer isUpdate, @RequestParam(value = "examPaperName", required = false) String examPaperName, @RequestParam("subjectNum") Integer subjectNum, @RequestParam("examPaperScore") Integer examPaperScore, @RequestParam("examPaperTime") Integer examPaperTime, @RequestParam("division") Integer division,
+			@RequestParam("examPaperEasy") Integer examPaperEasy, @RequestParam("gradeId") Integer gradeId) {
 		examPaper.setExamPaperId(examPaperId);
 		examPaper.setExamPaperName(examPaperName);
 		examPaper.setSubjectNum(subjectNum);
@@ -139,7 +131,6 @@ public class ExamPaperInfoHandler {
 		examPaper.setExamPaperEasy(examPaperEasy);
 		grade.setGradeId(gradeId);
 		examPaper.setGrade(grade);
-
 		if (isUpdate != null) {
 			logger.info("修改试卷 " + examPaper + " 的信息");
 			int row = examPaperInfoService.isUpdateExamPaper(examPaper);
@@ -147,7 +138,6 @@ public class ExamPaperInfoHandler {
 			logger.info("添加试卷 " + examPaper + " 的信息");
 			int row = examPaperInfoService.isAddExamPaper(examPaper);
 		}
-
 		return "redirect:/examPapers";
 	}
 

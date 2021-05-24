@@ -257,26 +257,17 @@ public class SubjectInfoHandler {
 	 * @param excel
 	 */
 	@RequestMapping(value="/dispatcherUpload", method=RequestMethod.POST)
-	public ModelAndView dispatcherUpload(HttpServletRequest request,
-			@RequestParam("division") Integer division,
-			@RequestParam("courseId") Integer courseId,
-			@RequestParam("gradeId") Integer gradeId,
-			@RequestParam("examPaperId") Integer examPaperId,
-			@RequestParam("importOption") String importOption,
-			@RequestParam("examPaperEasy") Integer examPaperEasy,
-			@RequestParam("examPaperName") String examPaperName,
-			@RequestParam("examPaperTime") Integer examPaperTime,
-			@RequestParam("inputfile") MultipartFile excel) {
+	public ModelAndView dispatcherUpload(HttpServletRequest request, @RequestParam("division") Integer division, @RequestParam("courseId") Integer courseId, @RequestParam("gradeId") Integer gradeId,
+			@RequestParam("examPaperId") Integer examPaperId, @RequestParam("importOption") String importOption, @RequestParam("examPaperEasy") Integer examPaperEasy,
+			@RequestParam("examPaperName") String examPaperName, @RequestParam("examPaperTime") Integer examPaperTime, @RequestParam("inputfile") MultipartFile excel) {
 		ModelAndView model = new ModelAndView("reception/suc");
 		String savePath = "";
-		
+
 		try {
 			/** 保存上传 excel 文件 */
 			savePath = saveUploadFile(excel, request.getRealPath("/WEB-INF/upload"));
-			
 			/** 解析上传 excel 文件, 得到试题集合 */
 			List<SubjectInfo> subjects = SubjectImportUtil.parseSubjectExcel(savePath, courseId, gradeId, division);
-			
 			/** 只添加试题 */
 			if ("0".equals(importOption)) {
 				Map<String, Object> subjectsMap = new HashMap<String, Object>();
@@ -299,16 +290,16 @@ public class SubjectInfoHandler {
 				examPaper.setDivision(division);
 				int row = examPaperInfoService.isAddExamPaper(examPaper);
 				logger.info("添加的新试卷 编号 "+examPaper.getExamPaperId());
-				
 				dispatcherExamPaperAndSubject(subjects, examPaper.getExamPaperId());
 			}
-			
 			if (subjects.size() == 0) {
-				model.addObject("success", "操作处理失败，共添加 <b style='color:red;'>"+subjects.size()+"</b> 道题, 请检查上传数据正确性!");
+				model.addObject("success", "操作处理失败，共添加 <b style='color:red;'>"+subjects.size()+"</b> " +
+						"道题, 请检查上传数据正确性!");
+				
 			} else {
 				model.addObject("success", "操作处理成功，共添加 "+subjects.size()+" 道题");
+				
 			}
-			
 		} catch (Exception e) {
 			e.printStackTrace();
 			model.setViewName("error");

@@ -25,8 +25,8 @@
     <script src="${path }/js/login.js"></script>
 </body>
 <script type="text/javascript">
-setTimeout(function(){
-	window.top.location.href = 'index.jsp';
-},1000);
+// setTimeout(function(){
+// 	window.top.location.href = 'index.jsp';
+// },1000);
 </script>
 </html>

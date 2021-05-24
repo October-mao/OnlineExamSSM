@@ -166,7 +166,7 @@ $(function() {
 			});
 			return false;
 		}
-		if(studentAccount.trim() == null || studentAccount.trim() == "" || studentAccount.length <= 0 || studentAccount.length > 30) {
+		if(studentAccount.trim() == null || studentAccount.trim() == "" || studentAccount.length <= 2 || studentAccount.length > 10) {
 			zeroModal.show({
 				title: "提示",
 				content: "考试登录账户不合法!",

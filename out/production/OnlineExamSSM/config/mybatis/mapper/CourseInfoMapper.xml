@@ -29,7 +29,7 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 				AND division=#{division}
 			</if>
 		</where>
-		ORDER BY courseId DESC
+		ORDER BY courseId
 	</select>
 	
 	<!-- 修改学科 -->

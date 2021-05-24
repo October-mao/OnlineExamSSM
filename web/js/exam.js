@@ -218,7 +218,8 @@ function subTime() {
 			ok : true,
 			onClosed : function() {
 				//考试结束回到考试中心页面
-				location.href = "willexams?classId="+$('#examEndRefresh_classId').text().trim()+"&gradeId="+$('#examEndRefresh_gradeId').text().trim()+"&studentId="+$('#exam-studentId').text().trim()+"";
+				location.href = "willexams?classId="+$('#examEndRefresh_classId').text().trim()+"&gradeId="+$('#examEndRefresh_gradeId').text().
+				trim()+"&studentId="+$('#exam-studentId').text().trim()+"";
 			}
 		});
 		return false;

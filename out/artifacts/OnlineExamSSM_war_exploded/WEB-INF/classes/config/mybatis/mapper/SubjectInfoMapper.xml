@@ -55,6 +55,9 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 				<if test="subject.grade != null">
 					OR a.gradeId=#{subject.grade.gradeId}
 				</if>
+				<if test="subject.subjectEasy != null">
+					OR subjectEasy=#{subjectEasy}
+				</if>
 			</if>
 		</where>
 		<if test="startIndex != null and pageShow != null">

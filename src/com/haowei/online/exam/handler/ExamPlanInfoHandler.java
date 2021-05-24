@@ -103,7 +103,6 @@ public class ExamPlanInfoHandler {
 	public String isAddExamPlan(ExamPlanInfo examPlan) {
 		logger.info("添加待考记录："+examPlan);
 		examPlanInfoService.isAddExamPlan(examPlan);
-		
 		return "redirect:examPlans";
 	}
 	
@@ -168,11 +167,9 @@ public class ExamPlanInfoHandler {
 		Map<String, Object> map = new HashMap<String, Object>();
 		map.put("classId", classId);
 		map.put("gradeId", gradeId);
-		
 		List<ExamPlanInfo> examPlans = examPlanInfoService.getStudentWillExam(map);
 		model.addObject("examPlans", examPlans);
 		model.addObject("gradeId", gradeId);
-		
 		return model;
 	}
 	
@@ -216,13 +213,10 @@ public class ExamPlanInfoHandler {
 			SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd hh:mm:ss");
 			Date beginTimeDate = sdf.parse(beginTime);
 			Long beginTimeTime = beginTimeDate.getTime();
-			
 			/** 转换考试时间为毫秒单位 */
 			int examTimeSecond = examTime * 60 * 1000;
-			
 			Date nowDate = new Date();
 			Long nowDateTime = nowDate.getTime();
-			
 			/** 当前时间超过了 考试结束时间，即为过期记录 */
 			if(nowDateTime > (beginTimeTime+examTimeSecond)) {
 				flag = true;
@@ -230,7 +224,6 @@ public class ExamPlanInfoHandler {
 		} catch (ParseException e) {
 			e.printStackTrace();
 		}
-		
 		return flag;
 	}
 	

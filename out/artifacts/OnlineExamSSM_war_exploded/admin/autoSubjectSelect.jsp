@@ -38,9 +38,9 @@
 							</div>
 						</div>
 						<div class="form-group">
-							<label for="class" class="col-sm-2 control-label">科目</label>
+							<label for="courseId" class="col-sm-2 control-label">科目</label>
 							<div class="col-sm-10">
-								<select id="slpk" class="selectpicker" name="courseId" id="courseId" data-live-search="true">
+								<select class="selectpicker" name="courseId" id="courseId" data-live-search="true">
 									<option value="">不限</option>
 									<option value="1">语文</option>
 									<option value="2">数学</option>
@@ -49,9 +49,9 @@
 							</div>
 						</div>
 						<div class="form-group">
-							 <label for="grade" class="col-sm-2 control-label">年级</label>
+							 <label for="gradeId" class="col-sm-2 control-label">年级</label>
 							<div class="col-sm-10">
-								<select id="slpk" class="selectpicker" name="gradeId" id="gradeId" data-live-search="true">
+								<select class="selectpicker" name="gradeId" id="gradeId" data-live-search="true">
 									<option value="">不限</option>
 									<option value="1">高一</option>
 									<option value="2">高二</option>
@@ -60,9 +60,9 @@
 							</div>
 						</div>
 						<div class="form-group">
-							 <label for="grade" class="col-sm-2 control-label">难易程度</label>
+							 <label for="subjectEasy" class="col-sm-2 control-label">难易程度</label>
 							<div class="col-sm-10">
-								<select id="slpk" class="selectpicker" name="subjectEasy" id="subjectEasy" data-live-search="true">
+								<select class="selectpicker" name="subjectEasy" id="subjectEasy" data-live-search="true">
 									<option value="">不限</option>
 									<option value="0">简单</option>
 									<option value="1">普通</option>
